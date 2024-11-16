@@ -1,5 +1,11 @@
 from gui.gui_gradio import ShortGptUI
 
 # Initialize and launch the UI with Colab-specific settings
-ui = ShortGptUI()
-ui.launch(server_name="0.0.0.0", server_port=31415, share=True)
+try:
+    import gradio
+    print(f"Gradio version: {gradio.__version__}")
+except Exception as e:
+    print(f"Error importing gradio: {e}")
+
+ui = ShortGptUI(colab=True)
+ui.launch(host="0.0.0.0", port=31415)
