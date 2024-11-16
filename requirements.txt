@@ -9,6 +9,7 @@ tinydb
 tinymongo
 proglog
 yt-dlp
+numpy==1.23.5
 torch
 torchaudio
 whisper-timestamped
