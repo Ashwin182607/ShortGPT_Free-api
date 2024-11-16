@@ -15,7 +15,6 @@ from shortGPT.editing_utils import captions, editing_images
 from shortGPT.editing_utils.handle_videos import extract_random_clip_from_video
 from shortGPT.engine.abstract_content_engine import AbstractContentEngine
 from shortGPT.gpt import gpt_editing, gpt_translate, gpt_yt, gpt_batch_video
-from shortGPT.engine.content_short_engine import ContentShortEngine
 
 
 class ContentShortEngine(AbstractContentEngine):
