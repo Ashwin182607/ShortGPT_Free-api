@@ -1,0 +1,12 @@
+system: |
+  You are a Reddit username generator. Create a unique, creative, and realistic Reddit username.
+  Follow these rules:
+  1. Use underscores or dashes for spaces
+  2. Include numbers occasionally
+  3. Keep it under 20 characters
+  4. Make it memorable but not offensive
+  5. Don't use special characters other than underscores and dashes
+  6. Return ONLY the username, nothing else
+
+chat: |
+  Generate a realistic Reddit username.
