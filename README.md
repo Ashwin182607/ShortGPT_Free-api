@@ -1,147 +1,124 @@
-# 🚀🎬 ShortGPT 
-## AI video automation framework
-<p align="center">
-  <a href="https://discord.gg/uERx39ru3R">
-    <img src="https://dcbadge.vercel.app/api/server/uERx39ru3R?compact=true&style=flat">
-  </a>
-  <a href="https://star-history.com/#rayventura/shortgpt)">
-    <img src="https://img.shields.io/github/stars/rayventura/shortgpt?style=social">
-  </a>
-  <a href="https://pypi.org/project/shortgpt/">
-    <img src="https://static.pepy.tech/personalized-badge/shortgpt?period=month&units=international_system&left_color=blue&right_color=green&left_text=Downloads/month">
-  </a>
-  <a href="https://docs.shortgpt.ai/">
-    <img src="https://img.shields.io/badge/docs-visit-blue">
-  </a>  
-</p>
+# ShortGPT Free API Version 🚀
 
-<div align="center" style="border-radius: 20px;" width="18%">
-    <img src="https://github.com/RayVentura/ShortGPT/assets/121462835/083c8dc3-bac5-42c1-a08d-3ff9686d18c5" alt="ShortGPT-logo" style="border-radius: 20px;" width="18%"/>
-</div>
-<div align="center">
-  <a href="https://discord.gg/uERx39ru3R">
-    <img src="https://img.shields.io/discord/1126042224979886160?color=7289da&logo=discord&logoColor=blue&labelColor=white&color=cyan" alt="Join our Discord" height="34">
-  </a>
-</div>
+This is an enhanced version of [RayVentura's ShortGPT](https://github.com/RayVentura/ShortGPT), optimized for better voice generation and batch processing capabilities.
 
-<div align="center">
-⚡ Automating video and short content creation with AI ⚡
-</div>
-</br>
+## 🌟 What's New
 
-Follow the installation steps below for running the web app locally (running the google Colab is highly recommanded). 
-Please read "installation-notes.md" for more details.
+### 1. Enhanced Voice Generation System
+- **OpenAI TTS Integration**
+  - High-quality voice synthesis at lower cost
+  - 6 unique voices: alloy, echo, fable, onyx, nova, shimmer
+  - Support for both tts-1 and tts-1-hd models
+  - Automatic fallback to free alternatives
 
-## 🚀 Quick Start with Google Colab
+### 2. Batch Processing Improvements
+- **Efficient Multi-Video Generation**
+  - Generate multiple videos from a single topic
+  - Dynamic script and title generation
+  - Improved content diversity
 
-The easiest way to use ShortGPT is through Google Colab. Follow these steps:
+### 3. Simplified Architecture
+- Removed YouTube upload dependencies
+- Direct video download functionality
+- More flexible voice engine selection
+- Improved error handling and fallback mechanisms
 
-1. Open our [ShortGPT Colab Notebook](https://colab.research.google.com/github/RayVentura/ShortGPT/blob/main/ShortGPT_Colab.ipynb)
-2. Click "Runtime" -> "Run all"
-3. Wait for the installation to complete
-4. Access the web interface through the provided link
+## 🛠️ Features
 
-## 🌟 Show Your Support
-We hope you find ShortGPT helpful! If you do, let us know by giving us a star ⭐ on the repo. It's easy, just click on the 'Star' button at the top right of the page. Your support means a lot to us and keeps us motivated to improve and expand ShortGPT. Thank you and happy content creating! 🎉 
+### Voice Options
+1. **OpenAI TTS (New!)**
+   - Premium quality at lower cost
+   - Multiple voice personalities
+   - High-definition model option
 
-[![GitHub star chart](https://img.shields.io/github/stars/rayventura/shortgpt?style=social)](https://github.com/RayVentura/ShortGPT/stargazers)
+2. **Free Alternatives**
+   - Edge TTS
+   - Google TTS
+   - CoquiTTS (requires GPU)
 
-## 🛠️ How it works
-![alt text](https://github.com/RayVentura/ShortGPT/assets/121462835/fcee74d4-f856-4481-949f-244558bf3bfa)
+3. **Premium Option**
+   - ElevenLabs (requires API key)
 
-## 📝 Introduction to ShortGPT 
-ShortGPT is a powerful framework for automating content creation. It simplifies video creation, footage sourcing, voiceover synthesis, and editing tasks. Of the most popular use-cases of ShortGPT is youtube automation and Tiktok creativity program automation.
+### Content Generation
+- GPT-powered script creation
+- Multilingual support
+- Dynamic content adaptation
+- Automated video assembly
 
-- 🎞️ **Automated editing framework**: Streamlines the video creation process with an LLM oriented video editing language.
+## 🚀 Getting Started
 
-- 📃 **Scripts and Prompts**: Provides ready-to-use scripts and prompts for various LLM automated editing processes.
-
-- 🗣️ **Voiceover / Content Creation**: Supports multiple languages including English 🇺🇸, Spanish 🇪🇸, Arabic 🇦🇪, French 🇫🇷, Polish 🇵🇱, German 🇩🇪, Italian 🇮🇹, Portuguese 🇵🇹, Russian 🇷🇺, Mandarin Chinese 🇨🇳, Japanese 🇯🇵, Hindi 🇮🇳,Korean 🇰🇷, and way over 30 more languages (with EdgeTTS)
-
-- 🔗 **Caption Generation**: Automates the generation of video captions.
-
-- 🌐🎥 **Asset Sourcing**: Sources images and video footage from the internet, connecting with the web and Pexels API as necessary.
-
-- 🧠 **Memory and persistency**: Ensures long-term persistency of automated editing variables with TinyDB.
-
-## 🛠️ Local Installation
-
-If you prefer running locally:
-
+1. **Installation**
 ```bash
-git clone https://github.com/RayVentura/ShortGPT.git
-cd ShortGPT
+git clone https://github.com/Ashwin182607/ShortGPT_Free-api.git
+cd ShortGPT_Free-api
 pip install -r requirements.txt
-python run.py
 ```
 
-## 🔑 API Keys Setup
-
-You'll need:
-1. OpenAI API key for content generation
-2. (Optional) ElevenLabs API key for premium voices
-
-Add these to your `.env` file:
-```
-OPENAI_API_KEY=your_key_here
-ELEVENLABS_API_KEY=your_key_here
+2. **API Keys Setup**
+```python
+# Add your API keys in the configuration
+OPENAI_API_KEY=your_key_here  # Optional for OpenAI TTS
+ELEVEN_LABS_API_KEY=your_key_here  # Optional for ElevenLabs
 ```
 
-## 🎮 Usage
+3. **Run the Application**
+```bash
+python runShortGPT.py  # For local installation
+# OR
+python runShortGPTColab.py  # For Google Colab
+```
 
-1. Enter your topic (e.g., "interesting science facts")
-2. Choose number of videos to generate (1-10)
-3. Select TTS engine and language
-4. Click "Generate Videos"
-5. Download your generated videos!
+## 💡 Usage Examples
 
-## ⚡ Tips for Best Results
+### Basic Video Generation
+```python
+from shortGPT.engine.batch_short_engine import BatchShortEngine
 
-- Use specific topics for better content generation
-- Keep video count under 5 for faster generation
-- Test different TTS engines for best voice quality
-- Ensure stable internet connection for API calls
+engine = BatchShortEngine(
+    topic="Interesting Science Facts",
+    num_videos=5,
+    voice_engine="openai",  # or "edge-tts" for free option
+    voice_name="nova"  # OpenAI voice option
+)
+engine.generate_videos()
+```
 
-## 🚀 Framework overview
+### Custom Voice Selection
+```python
+# Using OpenAI TTS
+engine.set_voice_engine("openai", voice_name="echo")
 
-- 🎬 The `ContentShortEngine` is designed for creating shorts, handling tasks from script generation to final rendering, including adding metadata.
+# Using Free Alternative
+engine.set_voice_engine("edge-tts", voice_name="en-US-JennyNeural")
+```
 
-- 🎥 The `ContentVideoEngine` is ideal for longer videos, taking care of tasks like generating audio, automatically sourcing background video footage, timing captions, and preparing background assets.
+## 🌐 Google Colab Support
+- Run ShortGPT directly in Google Colab
+- No local GPU required
+- Easy setup and execution
+- Check `ShortGPT_Colab.ipynb` for instructions
 
-- 🗣️ The `ContentTranslationEngine` is designed to dub and translate entire videos, from mainstream languages to more specific target languages. It takes a video file, or link, transcribe it's audio, translates the content, voices it in a target language, adds captions , and gives back a new video, in a totally different language.
+## 📊 Performance Comparison
 
-- 🎞️ The automated `EditingEngine`, using Editing Markup Language and JSON, breaks down the editing process into manageable and customizable blocks, comprehensible to Large Language Models.
+| Voice Engine | Quality | Cost | Speed |
+|--------------|---------|------|--------|
+| OpenAI TTS   | High    | Low  | Fast   |
+| Edge TTS     | Good    | Free | Fast   |
+| ElevenLabs   | Best    | High | Medium |
+| Google TTS   | Good    | Free | Fast   |
 
-💡 ShortGPT offers customization options to suit your needs, from language selection to watermark addition.
+## 🤝 Contributing
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest features
+- Submit pull requests
 
-🔧 As a framework, ShortGPT is adaptable and flexible, offering the potential for efficient, creative content creation.
+## 📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-More documentation incomming, please be patient.
+## 🙏 Acknowledgments
+- Original ShortGPT by [RayVentura](https://github.com/RayVentura/ShortGPT)
+- Enhanced with additional features and optimizations
 
-
-## Technologies Used
-
-ShortGPT utilizes the following technologies to power its functionality:
-
-- **Moviepy**: Moviepy is used for video editing, allowing ShortGPT to make video editing and rendering
-
-- **Openai**: Openai is used for automating the entire process, including generating scripts and prompts for LLM automated editing processes.
-
-- **ElevenLabs**: ElevenLabs is used for voice synthesis, supporting multiple languages for voiceover creation.
-
-- **EdgeTTS**: Microsoft's FREE EdgeTTS is used for voice synthesis, supporting way many more language than ElevenLabs currently.
-
-- **Pexels**: Pexels is used for sourcing background footage, allowing ShortGPT to connect with the web and access a wide range of images and videos.
-
-- **Bing Image**: Bing Image is used for sourcing images, providing a comprehensive database for ShortGPT to retrieve relevant visuals.
-
-These technologies work together to provide a seamless and efficient experience in automating video and short content creation with AI.
-
-## 💁 Contributing
-
-As an open-source project in a rapidly developing field, we are extremely open to contributions, whether it would be in the form of a new feature, improved infrastructure, or better documentation.
-<p align="center">
-  <a href="https://star-history.com/#RayVentura/ShortGPT&Date">
-    <img src="https://api.star-history.com/svg?repos=RayVentura/ShortGPT&type=Date" alt="Star History Chart">
-  </a>
-</p>
+## ⚠️ Disclaimer
+This is an unofficial enhanced version of ShortGPT. While we've added new features and improvements, all credit for the original implementation goes to RayVentura.
